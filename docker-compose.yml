@@ -1,0 +1,15 @@
+x-common: &common
+  build: .
+
+services:
+  converter:
+    <<: *common
+    env_file: converter.env
+    volumes:
+      - ./scripts/lib:/scripts/lib:ro
+      - ./scripts/converter:/scripts/app:ro
+      - ./input:/input
+      - ./output:/output
+      - ./work:/work
+      - ./logos:/logos
+    restart: unless-stopped

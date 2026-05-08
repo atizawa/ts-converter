@@ -1,0 +1,15 @@
+input/*.ts
+input/*.TS
+input/nocmcut/*.ts
+input/nocmcut/*.TS
+input/**/*.ffindex
+input/core
+input/core.*
+converter.env
+output/*
+!output/.gitkeep
+work/*
+!work/.gitkeep
+logos/**/*.lgd
+logos/**/*.png
+logos/.DS_Store
